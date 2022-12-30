@@ -1,0 +1,243 @@
+html{
+    font-size: 16px;
+}
+body{
+    background-color:  lightblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: futura, sans-serif;
+}
+figcaption{
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 1.25rem;
+}
+
+/*  HEADER START  */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    z-index: 100;
+    background-color:  lightblue;
+}
+.logo {
+    height: 200px;
+}
+.cloud-links{
+    display: flex;
+    width: auto;
+}
+.nav-link1,
+.nav-link2,
+.nav-link3 {
+    display: flex;
+    padding-right: 60px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Ropa Sans', sans-serif;
+    color: black;
+}
+.nav-link1,
+.nav-link2{
+    padding-left: 20px ;
+    width: 150px;
+    background-image: url("./resources/cloud1.png");
+}
+.nav-link2{
+    background-image: url("./resources/cloud3.png");
+}
+.nav-link3{
+    width: 175px;
+    background-image: url("./resources/cloud2.png");
+    padding:0 80px 0 70px;
+}
+.nav-link1:hover,
+.nav-link2:hover,
+.nav-link3:hover{
+    transition: 0.3s;
+    color: goldenrod;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1149px) {
+    .nav-link1,
+    .nav-link2,
+    .nav-link3{
+        background-image: none;
+        height: auto;
+        width: 50px;
+        text-align: center;
+    }  
+    .nav-link3{
+        width: 100px;
+    }
+    .nav-link2{
+        padding-left: 65px;
+    }
+    .cloud-links{
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 919px) {
+    header{
+        height: 200px;
+    }
+    .logo{
+        display: inline-block;
+        height: 100px;
+    }
+    .cloud-links{
+        width: 894px;
+        justify-content: space-around;
+        margin-top: -25px;
+    }
+    .nav-link1,
+    .nav-link2,
+    .nav-link3{
+        padding: 0;
+    }
+}
+/*  HEADER END  */
+
+/*  MISSION START  */
+.mission-container{
+    margin-top: 218px;
+    background: linear-gradient( lightblue,goldenrod);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.mission-statement{
+    font-size: 2.5rem;
+}
+.mission-support{
+    font-size: 2rem;
+    font-family: 'Ropa Sans', sans-serif;
+    margin-top: -10px;
+    word-spacing: 4px;
+}
+.mission-support span{
+    font-style: italic;
+    text-shadow: 1px 1px 2px azure;
+}
+@media only screen and (max-width: 919px){
+    .mission-statement{
+        font-size: 2rem;
+    }
+    .mission-support{
+        font-size: 1.5rem;
+    }
+}
+/*  MISSION END  */
+
+/*  SERVICES START  */
+.services-container,
+.services-header{
+    background-color:goldenrod;
+    display: flex;
+    flex-direction: column;
+}
+.services-header{
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.featured-services-headline{
+    font-size: 2rem;
+}
+.services-description{
+    font-size: 1.75rem;
+    font-family: 'Ropa Sans', sans-serif;
+    margin-top: -10px;
+    line-height: 150%;
+    word-spacing: 4px;
+}
+.services{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+.figure{
+    width: 450px;
+}
+.figure img{
+    width: 100%;
+}
+@media only screen and (max-width: 919px){
+    .featured-services-headline{
+        font-size: 1.5rem;
+    }
+    .services-description{
+        font-size: 1.25rem;
+    }
+    .figure{
+        width: 400px;
+    }
+}
+/*  SERVICES END  */
+
+/*  MEET THE OWNER START  */
+.the-owner-container{
+    background: linear-gradient( goldenrod,  lightblue);
+    padding: 123px 0 60px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.meet-owner-headline{
+    font-size: 2rem;
+}
+.owner-image{
+    height: 500px;
+}
+.owner-quote{
+    margin-top: -30px;
+}
+@media only screen and (max-width: 919px){
+    .meet-owner-headline{
+        font-size: 1.5rem;
+    }
+    .owner-image{
+        height: 400px;
+    }
+}
+/*  MEET THE OWNER END  */
+
+/*  FOOTER START  */
+.footer-container{
+    height: 400px;
+    padding-top: 240px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url("./resources/test-working-landscape.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.le-foot{
+    width: 100%;  
+}
+.footer-text{
+    padding-left: 10px;
+}
+/*  FOOTER END  */
